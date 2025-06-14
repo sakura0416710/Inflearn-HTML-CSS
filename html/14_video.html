@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>video</h1>
+    <video src="경로" width="100px" height="auto" autoplay controls poster="경로"></video>
+    <!--controls : 비디오 관련된 재생, 멈춤, 음성 등 조정을 위한 UI 제공기능이므로 컨트롤 버튼은 필수이다-->
+    <!--autoplay : 자동실행-->
+    <!--muted : 처음 재생 시 음소거로 재생됨-->
+    <!--loop  : 반복재생 -->
+    <!--poster : 영상 실행 전 보이는 썸네일 이미지 설정-->
+
+    <video src="경로"><track src="자막파일경로" kind="subtitles" srclang="en(이 자막은 어떤 언어를 위한 자막인가)" label="자막선택 옵션 이름(영어, 한국어 등)">
+    </video>
+
+</body>
+</html>

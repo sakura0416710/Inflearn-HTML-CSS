@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>form태그</h2>
+    <p><b>method : 데이터를 전송할 방법. get과 post 두가지 방법</b> <br/>
+    1. get : 전송하는 데이터가 url에 붙어서 전송되므로 데이터가 url에 노출된다. 보안에 취약하고 페이지 주소를 공유해야할 때 보안에 취약함.<br/>
+        페이지 주소를 공유해야할 때 주로 사용한다. 전송가능한 데이터 크기에 제약있음 <br/>
+    2. post : 전송하는 데이터가 url에 붙지 않으므로 사용자 눈에 보이지 않는다. 따라서 보안적으로 상대적으로 안정적이고(개발자 도구에선 보임;)<br/>
+        결국은 전송하는 데이터를 확인가능하므로 전송하는 데이터는 암호화하는 것이 좋다. 전송가능한 데이터 크기에 제약없음 <br/>
+        *https프로토콜은 암호화해서 데이터를 전송해줌
+    </p>
+
+    <form action="전송할 주소 (서버주소)" method="get" target="_blank">  <!--target : self가 디폴트값이며 데이터를 전송할 창을 어디로 할 것이냐를 정함.-->
+        <div>
+            <label for="name">이름</label>
+            <input type="text" name="name" id="name" autocomplete="on"/> <!--캐쉬에 정보저장 : autocomplete.지정된 name이 있어야 함-->
+        </div>
+        <div>
+            <label for="tel">연락처</label>
+            <input type="text" name="tel" id="tel"/> 
+        </div>
+         <div>
+            <label for="email">이메일</label>
+            <input type="text" name="email" id="email"/> 
+        </div>
+        <!--  formnovalidate : 폼 태그 안의 인풋 요소의 정합성을 체크하지 않는다. -->
+        <button type="submit" formnovalidate="formnovalidate">제출</button> 
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>전역 속성: 모든 태그에서 쓸 수 있는 속성</h1>
+    
+    <h1 draggable="true">움직일 수 있는 태그</h1>
+    <p lang="ko">대한민국</p> <!--메인언어가 한국어. 설정이유:검색했을 때 메인언어로 웹페이지 검색가능-->
+    <p hidden>이 문장은 화면에 보이지 않습니다.</p>
+    <a href="https://google.com" id="유일한 속성값" name="google">구글</a>
+    <label for="userID">사용자 아이디</label> <!--시각장애인을 위한 장치. 읽어줘야하므로 필요함-->
+    <input type="text" name="" id="userID"/> <!--시각장애인을 위한 장치 :id와 for를 연결지어주는 것-->
+
+    <br/>
+    <!--contenteditable : 사이트에서 수정가능하게 함-->
+    <p spellcheck="true" contenteditable="true">this is a paaaragraph</p>
+    
+    <p style="color:red; background-color: turquoise;">빨간색 문장입니다.</p>
+    
+    <!--탭키로 이 인덱스 순서먼저 이동가능하게 해주는 기능-->
+    <a href=""tabindex="1">네이버</a>
+    <a href=""tabindex="3">구글</a>
+    <a href=""tabindex="2">개발자의 품격</a>
+
+    <!--버튼 title: 버튼에 대한 설명 / on+명령어: 버튼에 대한 기능 추가-->
+    <button title="주문 버튼을 클릭하면 선택한 제품에 대한 주문이 진행됩니다.">주문</button>
+
+
+
+
+
+</body>
+</html>

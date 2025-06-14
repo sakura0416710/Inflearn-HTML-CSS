@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>form 태그 요소</h2>
+    <h3>1.select - option 태그 : 여러 개 중에서 고르기</h3>
+    <p>옵션이 굉장히 많을 때 유용 ex.국적선택할 때 <br/>
+       옵션이 적다면 라디오나 체크박스를 사용하는 게 낫다.</p>
+    <label for="">살고있는 지역은?</label>
+    <select name="" id="" multiple> <!--multiple속성: 여러 개 선택이 가능하지만 사용자 불편으로 사용하지 않음-->
+        <option value="02">서울</option>
+        <option value="051">부산</option>
+        <option value="064">제주</option>
+    </select> <!--사용자에겐 서울이보이고 개발자는 02를 반환받음 -->
+
+    <h3>2. textarea : 여러 줄을 입력받기 위해 생기는 입력창 </h3>
+    <div>
+        <textarea name="" id="" style="width:30%" rows="10"></textarea>
+    </div>
+
+    <h3>3. fieldset : 입력받는 정보끼리 묶을 때 사용, legend로 그룹이름 정하기</h3>
+    <div>
+        <fieldset>
+            <legend>개인정보 </legend>
+            <div>
+                <label for="name">이름</label>
+                <input type="text"id="name"name=""/>
+                <label for="tel">전화번호</label>
+                <input type="text"id="tel"name=""/>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>학력정보 </legend>
+            <div>
+                <label for="uni">대학</label>
+                <input type="text"id="uni"name=""/>
+                <label for="high">고등학교</label>
+                <input type="text"id="high"name=""/>
+            </div>
+        </fieldset>
+    </div>
+
+    <hr/>
+
+    <h3>4. datalist : input의 기능과 select의 기능의 복합속성 </h3>
+    <p>입력창에 아무것도 없으나, 누르면 옵션 중 선택이 가능한 것들이 나옴. input기능 + select기능 <br/>
+       검색창 입력 키워드에 해당하는 옵션이 나온다. <br/>
+       * input list와 datalist의 id를 일치시킬 것. <br/>
+       * 후에 자바스크립트에서 입력된 정보가 정확한지 검사하는 코드필수
+    </p>
+    <div>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Firefox">Firefox </option>
+            <option value="Chrome">Chrome</option>
+            <option value="Safari">Safari</option>
+        </datalist>
+    </div>
+    <div>
+        <!--옵션을 같이 쓸 수도 있다. select는 옵션을 다 넣어줘야 쓸 수 있으니까 
+        속도나 유지보수 측면에서 datalist보다 불리하긴 함-->
+        <input list="browsers" id="browsers2"> 
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>input type속성들</h1>
+    <p>input type을 제대로 해야 스마트폰에서 최적의 자판이 보이게 되므로 text를 남발하지 말자.</p>
+    <hr/>
+    <h2>form 요소 : 사용자로부터 데이터(정보)를 입력받기 위한 HTML요소이다. 입력받은 정보를 form단위로 한꺼번에 전송함</h2>
+    <h2>하지만 최근에는 사용하지 않는 추세이다. 싱글페이지app에서는 알맞지 않기 때문이다. </h2>
+    <form action="/server/login">
+        <div>
+        <label for="email">이메일</label>
+        <input type="emil" id="email"/> <!--tyle에 따라 달라짐-->
+        </div>
+        <div>
+            <label for="pw">비밀번호
+            <input type="password" id="pw"/>
+            </label>
+        </div>
+        <div>
+            <button>로그인</button>
+        </div>
+    </form>
+    <h2>form태그의 여러가지 요소</h2>
+    <h4>당신이 배우고 싶은 언어는? (다중 선택 가능)</h4>
+    <p>하나의 그룹을 나타내는 도구 : name="" 통일시키기. <br/>
+        for=""설정을 해야 글씨 눌러도 체크가능
+    </p>
+    <div>
+        <input type="checkbox" id="chk_html"name="check"/>
+        <label for="chk_html">HTML</label> <!--for랑 id로 연결시켜주기 (시각장애인 리더)-->
+        <input type="checkbox" id="chk_css"name="check"/>
+        <label for="chk_css">CSS</label> <!--for를 누르면 글씨를 눌러도 체크가 됨 !-->
+        <input type="checkbox" id="chk_js" name="check"/>
+        <label for="chk_js">javaScript</label>
+    </div>
+    <h4>당신이 배우고 싶은 언어는? (하나만 선택 가능)</h4>
+    <P>name을 통일시켜야 선택지 중 하나만 선택가능함(같은 라디오체크 그룹이라고 인식하기 때문)<br/>
+        for=""설정해야 글씨 눌러도 체크가 가능하다 (input이랑 label이랑 연결해주니까)
+    </P>
+    <div>
+        <input type="radio" id="rdo_html" name="radio"/>
+        <label for="rdo_html" >HTML</label>
+        <input type="radio" id="rdo_css"name="radio"/>
+        <label for="rdo_css" >CSS</label>
+         <input type="radio" id="rdo_js"name="radio"/>
+        <label for="rdo_js" >javaScript</label>
+    </div>
+    <h4>input에서 색상팔레트 띄우기 : type : color</h4>
+    <div>
+        <label for="favortieColor">가장 좋아하는 색상은?</label>
+        <input type="color" value="" id="favortieColor"/>
+    </div>
+    <h4>캘린더 띄우기 : input type:date</h4>
+    <div>
+        <label for="bornDate">태어난 날짜는?</label>
+        <input type="date" id="bornDate"/>
+    </div>
+    <h4>시간까지 선택 : type="datetime-local</h4>
+    <div>
+        <label for="arrivalDateTime">입국한 날짜/시간은?</label>
+        <input type="datetime-local" id="arrivalDateTime"/>
+    </div>
+    <h4>이메일 : type="email"</h4>
+    <p>하지만 요즘은 디자인된 걸로 자동검사를 하기 때문에 기본타입을 사용하지는 않는다.</p>
+    <div>
+        <form action="">
+            <label for="email">이메일 주소는?</label>
+            <input tyoe="email" id="email"/>
+            <button type="submit">저장</button> <!--버튼은 script안에 있으면 제출모드가 디폴트임-->
+        </form>
+    </div>
+
+    <h4>파일첨부 type="file"</h4>
+    <div>
+        <label for="file">파일첨부</label>
+        <input type="file" id="file"/>
+    </div>
+    <h4>hidden : 안보이지만 정보입력 가능한 속성. 사용자의 입력을 받기 위한 용도가 아니라, <br/>
+        개발자가 사용하기 위해서 쓰는 태그이다. 숨겨진 값도 함께 전송하기 위해 쓰임 <br/>
+        ex. value값으로 현재 주문하는 사람의 정보를 함께 넘겨야 누가 주문했는지 알 수 있다.
+    </h4>
+    <div>
+        <input type="hidden" value="hong@naver.com" name="email">
+    </div>
+    <h4>input 이미지 속성 : 잘 안쓰기 함</h4>
+    <div>
+        <img src="이미지경로" alt="이미지 설명" width="100px" height="100px">
+        <input type="image" src="이미지경로" style="width:100px; height:auto"/> <!--이건 잘 안쓰임-->
+    </div>
+
+    <h4>month타입</h4>
+    <div>
+        <label for="birth">생년월일</label>
+        <input type="month" id="birth">
+    </div>
+    <h4>주문 수량 등에 쓸 수 있는 number type</h4>
+    <div>
+        <label for="age">당신의 나이는?</label>
+        <input type="number" id="age" min="0" max="100">
+    </div>
+    <h4>비밀번호 password type</h4>
+    <div>
+        <label for="pw">비밀번호</label>
+        <input type="password" id="pw"/>
+    </div>
+
+    <h4>전화번호 : tel type</h4>
+    <p>form태그를 써서 자동으로 형식을 체크해줄 수 있지만 각국마다 전화번호 형식이 다르므로 개발자가 지정해주어야 한다. <br/>
+        따라서 pattern이라는 속성으로 (자바스크립트) 체크할 수 있다.
+    </p>
+    <div>
+        <form>
+         <label for="phone">전화번호</label>
+         <input type="tel" id="phone" value="" pattern="^010-\d{4}-\d{4}$"/> <!-- \ : 반드시, d: 숫자로 시작 ^:시작하는 값-->
+         <button type="submit">제출</button>
+        </form>
+       
+    </div>
+
+    <h4>그외 모든 문자, 숫자를 받을 수 있는 type="text" </h4>
+    <div>
+        <label for="general">일반문자</label>
+        <input type="text" id="general">
+    </div>
+    <h4>시간만 선택하는 type= time</h4>
+    <div>
+        <label for="visitTime">예약시간</label>
+        <input type="time" id="general"/>
+    </div>
+    <h4>type="url"</h4>
+    <div>
+        <form action="">
+         <label for="blog">블로그주소는?</label>
+         <input type="url" id="blog"/>
+         <button type="submit">저장</button>
+        </form>
+    </div>
+    <h4>n번째 주라고 띄우기 : week type</h4>
+    <div>
+        <label for="weekPlan">주간계획(몇주차)</label>
+        <input type="week" id="weekPlan">
+    </div>
+    
+    <h4>검색조건 type search</h4>
+    <div>
+        <label for="searchKey">검색조건</label>
+        <input type="search" id="searchKey"/>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

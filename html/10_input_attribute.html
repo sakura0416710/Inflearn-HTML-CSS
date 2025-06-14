@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>input의 속성값</h2>
+    <h3>1. readonly : 읽기전용 (값 전송가능)</h3>
+    <form action="">
+    <div>
+        <input type="text" value="abd" readonly/>
+    </div>
+    <h3>2. disabled : 수정불가 (값 전송 불가)</h3>
+    <div>
+        <input type="text" disabled/>
+    </div>
+    <button type="submit">저장</button>
+    </form>
+    <h3>3. maxlength : 입력 자릿수 설정</h3>
+    <div>
+        <input type="text" maxlength="6"/>
+    </div>
+
+    <h3>4. placeholder : 입력 가이드 (클릭 시 사라짐)</h3>
+    <div>
+        <input type="tel" placeholder="하이폰(-)없이 숫자만 입력" width="50%"/>
+    </div>
+    <div>
+    <h3>5. required : 필수 입력값</h3>
+    <p>autofocus : 입력할 칸으로 자동이동</p>
+    <form action=""> <!--form action : 이동할 주소 등 입력-->
+        <label for="userId">아이디</label>
+        <input type="text" id="userId" required autocomplete="on" name="username" autofocus="on">
+        <label for="userPw">비밀번호</label>
+        <input type="text" id="userPw" required >
+        <button type="submit">저장</button>
+    </form>
+    </div>
+    <h3>6. autocomplete : 캐쉬에 저장된 정보가 보이게 됨 (사이트 상관없이 쌓임)</h3>
+    <p>name값이 중요한 역할을 한다. 표준name값으로 맞춰줄 것 <br/>
+        브라우저에 저장되는 정보는 name속성의 값에 영향을 받고 자동완성 기능을 사용할 수 있는 미리 정의된 name값이 있다. <br>
+        1. name : 사람 전체이름 <br/>
+        2. email : 이메일 주소<br/>
+        3. username: 사용자 계정<br/>
+        4. new-password :새로운 비번<br/>
+        5. current-password : 사용자의 현재 비번<br/>
+        6. one-time-code : 사용자를 인증할 떄 사용하는 1회성 코드<br/>
+        7. organization-title : 직위 <br/>
+        8. organization : 회사 또는 조직명 <br/>
+        9. country : 국가코드<br/>
+        10. country-name : 국가이름 <br/>
+        11. postal-code : 우편번호 <br/>
+        12. address-level1 : 첫번째 행정구역 (우리나라는 특별시.광역시.도)<br/>
+        13. address-level2 : 두번째 행정구역 (우리나라는 시.구)<br/>
+        14. address-level3 : 세번째 행정구역<br/>
+        15. address-level4 : 네번째 행정구역<br/>
+        16. street-address : 도로 주소 <br/>
+        17. language : 선호 언어 <br/>
+        18. bday : 생년월일 <br/>
+        19. bday-day : 생년월일에서 일 <br/>
+        20. sex : 성별 <br/>
+        21. tel : 국가코드 포함한 전체 전화번호 <br/>
+        22. tel-country-code : 국가코드<br/>
+        23. tel-national : 전체전번에서 국가코드 제외한 전번<br/>
+        24. tel-area-code : 지역번호 <br/>
+        25. tel-local : 국가코드랑 지역번호 제외한 전화번호 <br/>
+        26. url: 웹사이트 주소
+    </p>
+    <div>
+        <label for="phone">전화번호</label>
+        <input type="text" id="phone" name="phone" autocomplete="on"/>
+    </div>
+
+    
+</body>
+</html>
