@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 배경색 */
+        div{
+            background-color: aqua;
+        }
+        /* 배경이미지 */
+        /* background : color, image, repeat, position 순서로 한꺼번에 쓰기 가능 */
+        body{
+            background-image: url("사진경로");
+            /* 가로로 반복 */
+            background-repeat: repeat-y;
+            /* 세로반복 */
+            background-repeat: repeat-x;
+            /* 반복없는 이미지 */
+            background-repeat: no-repeat;
+            /* 이미지 위치 잡기 : background-position : x축 y축위치*/
+            background-position: center top;
+            background-position: left center;
+            background-position: center center;
+            background-position: right 20px top 50px;
+            background-position: right 20px top 50px;
+
+            /* 배경이미지가 고정인지 움직일지 정하는 속성 */
+             /* 이미지위치 고정  :fixed */
+            background-attachment: fixed;
+            /* 이미지 위치 스크롤과 함께 이동 : scroll */
+            background-attachment: scroll;
+
+            background: yellowgreen url("경로") no-repeat center top 50px;
+            
+        }
+
+        
+        
+    </style>
+</head>
+<body style="height:800px">
+    <div>배경색</div>
+</body>
+</html>

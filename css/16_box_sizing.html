@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:300px;
+            height:100px;
+            margin:10px;
+            padding:10px;
+            border:10px solid black;
+        }
+        /* 박스사이즈 중 콘텐츠 크기를 기준으로 공간을 만듦 */
+        .box-cb{
+            box-sizing: content-box;
+        }
+        /* border까지 고려한 크기의 공간을 만듦 */
+        .box-bb{
+            box-sizing: border-box;
+        }
+        /* px단위 */
+        /* 퍼센트(백분율). 부모 요소를 기준으로 상대적으로 변화함 */
+    </style>
+</head>
+<body>
+    <p>보통 위의 style대로 하면 padding과 border의 두께는 고려하지 않고 사이즈가 적용됨 <br>
+    </p>
+    <div class="box-cb">CSS 박스 모델-content-box</div>
+    <div class="box-bb">CSS 박스 모델-border-box</div>
+
+    <!--  % : 부모 요소를 기준으로 적용된다.-->
+      <!--max-width, min-width, max-height, min-height로 범위지정-->
+    <div style="width:100%; background-color: green; height:200px;">
+        <div style="width:50%; max-width:900px; background-color: red; height:50%;" >
+
+        </div>
+    </div>
+    
+</body>
+</html>

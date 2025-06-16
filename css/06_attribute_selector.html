@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 속성선택자 : [] */
+
+        /* input태그이면서 속성타입이 텍스트인것에 적용하겠다(복합선택) */
+        .box1 input[type="text"]{
+            border: 2px solid red;
+        }
+
+        [name="email"]{
+            border: 2px solid blue;
+        } 
+    </style>
+
+
+</head>
+<body>
+    <div class="box1">
+        <input type="text" name="text" id="">
+        <input type="email" name="email" id="">
+        <input type="date" name="date" id="">
+    </div>
+     <div>
+        <input type="text" name="text" id="">
+        <input type="email" name="email" id="">
+        <input type="date" name="date" id="">
+    </div>
+</body>
+</html>

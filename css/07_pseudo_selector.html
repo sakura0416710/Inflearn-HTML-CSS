@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 가상클래스 : 상황을 예상하고 상황에 맞춘 클래스를 만들어두기*/
+   
+        a{
+            text-decoration: none;
+        }
+        /* 마우스가 a태그 위에 올라올 때 :  hover */
+        a:hover{ 
+            background-color: pink; color: gray;
+        }
+        button:hover{
+            color:white; background-color: brown;
+        }
+        /* 방문한 적이 없는 링크 */
+        a:link{
+            color: blue;
+        }
+        /* 방문한 적이 있는 링크 */
+        a:visited{
+            color:violet;
+        }
+
+        /* 미우스가 포커스(클릭) 됐을 때 */
+        input:focus{
+            border: solid 5px red;
+        }
+        
+        table, th, td{
+            text-align: center; border: 1px solid black;border-collapse: collapse;
+        }
+        table{
+            width:100%;
+
+        }
+        /* 2n, even :짝수행*/
+        tbody>tr:nth-child(2n){
+            background-color: greenyellow;
+            
+
+        }
+        /* 2n+1, odd :  홀수행 */
+        tbody>tr:nth-child(2n+1){
+            background-color: rgb(224, 135, 188);
+            
+        }
+   </style>
+</head>
+<body>
+    <h1>pseudo가상 클래스</h1>
+    <a href="https://naver.com">네이버</a>
+    <a href="https://google.com">구글</a>
+
+    <a href="https://abe.com">방문한 적 없는 사이트</a>
+    <br>
+    <button>조회</button>
+    <br>
+    <input type="text">
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>연락처</th>
+                <th>이메일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>김</td>
+                <td>1234</td>
+                <td>kim@</td>
+            </tr>
+             <tr>
+                <td>이</td>
+                <td>5678</td>
+                <td>leem@</td>
+            </tr> 
+            <tr>
+                <td>박</td>
+                <td>9999</td>
+                <td>park@</td>
+            </tr>
+            <tr>
+                <td>송</td>
+                <td>3423</td>
+                <td>songk@</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>

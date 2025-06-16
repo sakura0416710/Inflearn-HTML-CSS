@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 있는 순서대로 폰트를 적용해줌 */
+        .font1{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>글꼴 스타일링</h1>
+    <h2>기본 폰트</h2>
+    <h2 style="font-family: verdana;">verdana폰트</h2>
+    <h2 style="font-family: courier;">courier폰트</h2>
+    <h2 style="font-family: serif;">serif폰트</h2>
+    <h2 style="font-family: monospace;">monospace폰트</h2>
+    <h2 style="font-family: fantasy;">fantasy폰트</h2>
+    <h2 style="font-family: sans-serif;">sans-serif폰트</h2>
+    
+    <hr>
+    <h2 class="font1">현재 브라우저에 courier New폰트가 있다면 그게 적용되고, 없으면 courier, 없으먄 monospace폰트가 적용될 것</h2>
+    <h2>폰트 굵기 : font-weight, bolder, lighter</h2>
+    <p style="font-weight: 400;">400굵기</p>
+    <p style="font-weight: 700;">700굵기</p>
+    <p style="font-weight: bolder;">bolder굵기</p>
+    <div style="font-weight: 400;">부모가 굵기가 400이면
+        <p style="font-weight: bolder;">bolder는 상대적으로 변하므로 700이 된다. (평상시는 400)</p>
+    </div>
+
+    <h2>폰트 크기</h2>
+    <p>대부분의 브라우저는 폰트 크기 12pt, 16px, 1em, 100%가 적용됨. <br>
+    상대적 길이값 em: 부모를 기준으로 정의됨 <br>
+    상대적 길이값 rem : 루트 요소의 폰트 크기 기준. 특정 루트를 기준으로 적용됨 -> 스마트폰, 태블릿 등에 변형될 때 유용 
+    </p>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

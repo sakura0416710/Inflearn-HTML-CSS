@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <!-- 복합선택자 -->
+     <style>
+        /* 1. 하위선택자 방식 : 띄어쓰기(모든 해당 하위태그를 찾음)*/
+        section ul{
+            border: solid pink 2px;
+        }
+        /*2. 자식선택자 : > 바로 밑에 있는 자식태그를 찾음 */
+        section>ul{
+            border-style: dotted;
+        }
+
+         /*3. 인접 형제선택자 : + 바로 밑에 있는 자식태그를 찾음 */
+        h1+ul{
+            background-color: gray;
+        }
+
+
+          /*2. 일반 형제선택자 : ~  (모든 하위태그를 찾아줌)*/
+          h1~ul{
+            background-color: aquamarine;
+          }
+     </style>
+</head>
+<body>
+    <section>
+        <p>p태그</p>
+        <ul>
+            <li>li태그</li>
+                <ul>
+                    <li>li태그</li>
+                </ul>
+        </ul>
+    </section>
+    <div>
+        <h1>h1태그</h1>
+        <ul>
+            <li>li태그(1)</li>
+        </ul>
+        <ul>
+            <li>li태그(2)</li>
+        </ul>
+    </div>
+</body>
+</html>

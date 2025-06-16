@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-center{
+            text-align: center;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .text-left{
+            text-align: left;
+        }
+        .text-blue{
+            color:blue;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+         .overline{
+            text-decoration: overline;
+        }
+         .delline{
+            text-decoration: line-through;
+        }
+         .plain{
+            text-decoration: none;
+        }
+        /* text-decoration-style:장식선 스타일(직선, 점선 등) */
+        /* text-decoration-line:장식선 스타일( 밑줄, 윗줄, 가운데줄 등) */
+        /* text-decoration-color: 장식선 색상*/
+        /* text-decoration-thickness: 장식선 두께*/
+        .underover{
+            text-decoration: dashed underline overline red;
+            /* text-decoration-style: dashed;  이렇게 하나하나 안 넣고 한꺼번에 넣기
+            text-decoration-line: underline overline; */
+        }
+        
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <h2>기본적인 텍스트 스타일링</h2>
+    <h3>1. 텍스트 정렬</h3>
+    <h3 class="text-center">가운데 정렬</h3>
+    <h3 class="text-right">오른쪽 정렬</h3>
+    <h3 class="text-left">왼쪽 정렬</h3>
+    <br>
+    <h3>2. 텍스트 색상</h3>
+    <h4 class="text-blue">파란색</h4>
+
+    <h3>3. 텍스트 장식선</h3>
+    <h4 class="underline">밑줄을 가진 글씨입니다.</h4>
+    <h4 class="overline">윗줄을 가진 글씨입니다.</h4>
+    <h4 class="delline">취소선을 가진 글씨입니다.</h4>
+    <a href="" class="plain">밑줄 없는 링크</a>
+    <h4 class="underover">윗줄과 밑줄 글씨입니다.</h4>
+
+    <h3>4. 텍스트 변환 (보이는 것과 실제 값은 다르다는 걸 명심. css는 보이는 걸 바꿔주니까)</h3>
+    <p>uppercase : 대문자 변환 <br>
+       lowercase : 소문자 변환 <br>
+       capitalize : 단어 첫글자만 대문자 변환 <br>
+       toUpperCase() : 자바스크립트에서 대문자 변환
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
