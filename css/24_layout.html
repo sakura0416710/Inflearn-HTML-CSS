@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 테이블태그 속성 가짐 */
+        .display-table{
+            display:table;
+        }
+        /* 테이블 헤드의 속성을 가짐 */
+        .display-tb-header{
+            display: table-header-group;
+        }
+
+        /* <tbody>요소처럼 표현됨 */
+        .display-tb-tbody{
+            display:table-row-group; 
+        }
+        /* <tr>요소처럼 표현됨 */
+        .display-tb-row{
+            display: table-row; 
+        }
+        /* td, th처럼 표현됨 */
+        .display-tb-cell{
+            display:table-cell;
+        }
+
+
+
+    </style>
+</head>
+<body> 
+    <h2>css 레이아웃 : display속성. 하지만 반응협웹에 적용하기에는 어려운 면이 있다.</h2>
+    <p>display프로퍼티는 HTML요소의 외부 display유형을 블록과 인라인 중 어떤 방식으로
+        처리할지 설정할 수 있다. 블록요소와 인라인 요소가 존재하지만 바꿀 수 있게 된다. 
+    </p>
+    <p>display유형을 설정하는 값 : table, flex, </p>
+    <h3>1. table 유형</h3>
+
+
+    <div class="display-table"> </div> <!--table태그와 같은 효과를 갖게 되는 것.-->
+    <div class="display-tb-header"></div>
+    <div class="display-tb-tbody"></div>
+    
+    <h2>flexbox 레이아웃</h2>
+    flexbox는 웹 화면의 공간분할과 콘텐츠가 담길 공간의 크기 및 배분, 그리고 콘텐츠에 대한 배치 순서를 빠르고 쉽게 정의할 수 있게 해주는 화면 레이아웃 모델.
+    주축 main axis과 교차축 cross axis에 기준으로 레이아웃을 정의할 수 있음.
+    row: 아이템이 배치되는 방향이 왼 -> 오른쪽
+    row-reverse : 아이템 배치 방향 오른 ->왼
+    column : 상단 -> 하단
+    column-reverse : 하단->상단
+
+
+    
+</body>
+</html>

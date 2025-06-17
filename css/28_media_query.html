@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            background-color: yellow;
+        }
+
+        /* 미디어 쿼리 : 
+            max-, min- 접두사를 이용할 수 있다.
+            후순위 코드가 우선적용된다.
+            landscape : 가로모드
+            portrait : 세로모드
+        */
+        @media screen and (width : 600px){
+            body{
+                background-color: red;
+            }
+        } 
+
+        @media  screen and (max-width:600px) {
+            body{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>뷰 포트 viewPort : 반응형 웹</h2>
+    <h4>모바일 웹에서 사용자에게 보여지는 영역</h4>
+    <meta name="viewport" content="width=device-width, initial-scale = 1:0"> 
+
+    <h4>
+        미디어 쿼리 media query : 스크린 크기별로 별도의 css를 적용해서 사용자의 스크린크기에
+        최적화된 스타일을 적용할 수 있도록 해준다.
+    </h4>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

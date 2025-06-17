@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            /* rowx축 : 좌에서 우측으로 이동 */
+            flex-direction: row; 
+            /* row-reverse(x축 리버스) =y축 : 우에서 좌측 이동 */
+             /* column y축 : 위에서 아래로 이동 */
+            flex-direction : row-reverse;
+            border:3px dotted black;
+            
+        }
+        .item{
+            background-color: yellow;
+            width: 150px;
+            border:2px solid blue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>플렉스박스</h2>
+    <div class="container"></div>
+    <div class="item">A</div>
+    <div class="item">B</div>
+    
+</body>
+</html>

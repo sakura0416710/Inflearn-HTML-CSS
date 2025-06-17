@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            /* rowx축 : 좌에서 우측으로 이동 */
+            flex-direction: row; 
+            /* row-reverse(x축 리버스) =y축 : 우에서 좌측 이동 */
+             /* column y축 : 위에서 아래로 이동 */
+            flex-direction : row-reverse;
+            border:3px dotted black;
+
+            /* justify-content : 플렉스상태 정렬방식,컨테이너 아이템 정렬 */
+            /* row : start왼쪽정렬 end오른쪽정렬 */
+            justify-content: flex-start;
+
+            /* 가운데 정렬 */
+            justify-content: center;
+
+            /* space-between : 아이템들끼리 간격 맞춰줌.
+               space-around : 아이템과 아이템의 둘레의 간격을 균일하게 정렬합니다. 
+               space-evenly : 아이템 사이와 시작점과 끝점을 균일하게 정렬합니다. */
+            
+            /* flex상태에서 배치 */
+               display: flex;
+               flex-direction: column-reverse;
+
+               
+            /* 그리드 레이아웃 : 로우와 컬럼을 동시에 배치할 수 있는 두 방향 2차원적 레이아웃 시스템이고 복잡한
+            시스템을 직접 직관적으로 구축할 수 있도록 해줌 */
+        
+        
+        
+            }
+
+
+        .item{
+            background-color: yellow;
+            width: 150px;
+            border:2px solid blue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>정렬방식</h2>
+    <div class="container"></div>
+    <div class="item">A</div>
+    <div class="item">B</div>
+    
+</body>
+</html>
